@@ -1,8 +1,12 @@
 # EIP-712 Multisig Payroll
 
-An M-of-N multi-signature treasury for off-chain signed ETH and ERC-20 payroll disbursements, written in **Solidity ^0.8.20** and tested with **Foundry**.
+> **What it is about:** An off-chain signed multi-signature treasury for automated payroll and contract disbursements using the EIP-712 typed structured data standard.
+>
+> **What it does:** Enables $M$-of-$N$ authorized signers to approve payments off-chain by signing structured typed messages; any relayer can broadcast the aggregated signatures to execute ETH or ERC-20 transfers on-chain, backed by strict replay defense, deadline validation, and ascending address verification to reject duplicate signers.
 
-## Core Features & Architecture
+---
+
+## Key Features & Architecture
 
 - **EIP-712 Typed Structured Data:**
   - Secure domain separator binding `name`, `version`, `chainId`, and `verifyingContract`.
